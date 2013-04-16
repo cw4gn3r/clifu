@@ -7,9 +7,14 @@ Command line scripts and environment setups project taking shape before your eye
     git clone git@github.com:synctree/clifu.git
     cd clifu
     
-    echo CLIFU_HOME=\${CLIFU_HOME:-`pwd`} >> ~/.bash_profile
-    echo source \$CLIFU_HOME/setup.sh     >> ~/.bash_profile
+    echo CLIFU_HOME=\${CLIFU_HOME:-`pwd`} >> ~/.bashrc
+    echo source \$CLIFU_HOME/setup.sh     >> ~/.bashrc
 
+Then put this in your `.bash_profile`:
+
+    if [ -f ~/.bashrc ]; then
+       source ~/.bashrc
+    fi
 
 # TODO
   * Break all of the shell scripts out into package directories
