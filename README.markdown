@@ -4,8 +4,12 @@ Command line scripts and environment setups project taking shape before your eye
 
 # Setup
 
-    git clone git@github.com:synctree/clifu.git
-    cd clifu
+First, fork the repository. You'll want to work off your own copy. 
+
+Then run this:
+
+    git clone git@github.com:<username>/clifu.git ~/.clifu
+    cd ~/.clifu
     
     echo CLIFU_HOME=\${CLIFU_HOME:-`pwd`} >> ~/.bashrc
     echo source \$CLIFU_HOME/setup.sh     >> ~/.bashrc
